@@ -1,8 +1,8 @@
 const { expect } = require('chai');
 const { mergeCategories } = require('../merge-categories');
 
-describe("The mergeCategories function", () => {
-  describe("For lists", () => {
+describe("mergeCategories()", () => {
+  context("Using <li> tags", () => {
     const template = `
       <div>
         <ul>
@@ -11,20 +11,19 @@ describe("The mergeCategories function", () => {
       </div>
     `;
 
-    it("should return no LIs for no categories", () => {
+    it("should return no <li>s for no categories", () => {
+    });
+
+    it("should return a single <li> for one category", () => {
       expect.fail('please write this test');
     });
 
-    it("should return a single LI for one categories", () => {
-      expect.fail('please write this test');
-    });
-
-    it("should return an LI for each category", () => {
+    it("should return an <li> for each category", () => {
       expect.fail('please write this test');
     });
   });
 
-  describe("For selects", () => {
+  context("using <option> tags", () => {
     const template = `
       <div>
         <select>
@@ -33,15 +32,15 @@ describe("The mergeCategories function", () => {
       </div>
     `;
 
-    it("should return no OPTIONs for no categories", () => {
+    it("should return no <option>s for no categories", () => {
       expect.fail('please write this test');
     });
 
-    it("should return a single OPTION for one categories", () => {
+    it("should return a single <option> for one category", () => {
       expect.fail('please write this test');
     });
 
-    it("should return an OPTION for each category", () => {
+    it("should return an <option> for each category", () => {
       expect.fail('please write this test');
     });
   });
