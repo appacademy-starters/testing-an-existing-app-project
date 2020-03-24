@@ -8,19 +8,19 @@ describe("The mergeItems function", () => {
       </tbody>
     </table>
   `;
-  it("should return no TRs and no TDs for no items", () => {
+  it("should return no <tr>s and no <td>s for no items", () => {
     expect.fail('please write this test');
   });
 
-  it("should return a single TR, four TDs, and a FORM for one uncompleted item", () => {
+  it("should return a single <tr>, four <td>s, and a <form> for one uncompleted item", () => {
     expect.fail('please write this test');
   });
 
-  it("should return a single TR, four TDs, and no FORM for one completed item", () => {
+  it("should return a single <tr>, four <td>s, and no <form> for one completed item", () => {
     expect.fail('please write this test');
   });
 
-  it("should return three TRs for three items", () => {
+  it("should return three <tr>s for three items", () => {
     expect.fail('please write this test');
   });
 });

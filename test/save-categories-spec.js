@@ -1,6 +1,6 @@
 const { expect } = require('chai');
 const { saveCategories } = require('../save-categories');
-describe("The saveCategories function", () => {
+describe("saveCategories()", () => {
   it('adds the new category to the list', () => {
     // Arrange
     const categories = ['One', 'Two', 'Three'];
